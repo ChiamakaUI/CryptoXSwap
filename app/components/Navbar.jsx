@@ -10,8 +10,8 @@ const Navbar = () => {
       <div className="hidden lg:flex flex-row justify-between items-center w-[38%]">
         <Link href="/swap">Swap</Link>
         <Link href="/vendors">Vendors</Link>
-        <Link href="/login">Sign In</Link>
         <Link href="/contact">Contact</Link>
+        <Link href="/login">Sign In</Link>
         <Link href="/signup">
           <button className="bg-white text-primary py-1.5 px-3.5 rounded">Sign Up</button>
         </Link>

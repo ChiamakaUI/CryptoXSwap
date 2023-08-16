@@ -10,13 +10,18 @@ const AdvancedRealTimeChart = dynamic(
 );
 const Chart = () => {
   return (
-    <div className="h-[450px] w-[88%] mx-auto my-6">
-      <AdvancedRealTimeChart
-        theme="dark"
-        autosize
-        symbol="BINANCE:BTCUSDT"
-      ></AdvancedRealTimeChart>
-    </div>
+    <>
+      <h2 className="text-center text-xl lg:text-3xl font-semibold uppercase mt-4">
+        Market Chart
+      </h2>
+      <div className="h-[500px] w-[94%] mx-auto mb-10 mt-4 bg-white p-8">
+        <AdvancedRealTimeChart
+          theme="light"
+          autosize
+          symbol="BINANCE:BTCUSDT"
+        ></AdvancedRealTimeChart>
+      </div>
+    </>
   );
 };
 

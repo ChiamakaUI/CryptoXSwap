@@ -12,7 +12,7 @@ const CarouselBanner = () => {
       heading: "Swap your coins very fast",
       imageLink: "./banner/second.svg",
       subText:
-        "No more waiting. Get your coins directly into your wallet immediately it gets confirmed .",
+        "No more waiting. Get your coins directly into your wallet immediately it gets confirmed.",
     },
     {
       heading: "The most trusted Cryptocurrency exchange",

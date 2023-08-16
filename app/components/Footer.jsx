@@ -4,9 +4,9 @@ import { BiLogoPlayStore } from "react-icons/bi";
 import Link from "next/link";
 
 const Footer = () => {
-  //#343895
+  //#343895 #AD36E4
   return (
-    <div className="bg-[#363F9F] p-5 lg:p-8 w-full">
+    <div className="bg-[#363F9F] p-5 lg:p-8 w-full mt-20">
       <div className="flex flex-row justify-between items-center">
         <Image
           src="/logo.png"
@@ -44,7 +44,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-[60%] lg:w-[25%] rounded p-3 bg-[#312B82]">
-          <p className="lg:text-lg ml-2">Download our App</p>
+          <p className="lg:text-lg ml-2 font-semibold">Download our App</p>
+          <p className="text-sm lg:text-base ml-2">To easily access your wallet, and get notifications on our promos</p>
           <div className="flex flex-col lg:flex-row w-[68%] lg:w-full lg:mt-4">
             <button className="bg-primary rounded-full flex flex-row items-center py-2 px-3.5 my-2.5 lg:my-0 lg:mr-2 lg:text-lg">
               {" "}

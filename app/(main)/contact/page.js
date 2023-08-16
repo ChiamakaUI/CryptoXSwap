@@ -23,11 +23,8 @@ const Main = () => {
   return (
     <div className="w-[88%] mx-auto my-2 lg:w-[45%]">
       <h2 className="text-center text-2xl lg:text-3xl font-semibold my-3">
-        Please fill form to contact us or send a review
+        Contact us 
       </h2>
-      <p className="text-center lg:text-lg">
-          Your reviews are very important to us.
-        </p>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="w-full bg-white p-6 rounded-md text-black my-5"
