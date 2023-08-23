@@ -30,7 +30,7 @@ const Footer = () => {
           <hr className="my-2 w-full" />
           <div className="flex flex-row justify-between items-center">
             <div className="flex flex-col lg:text-lg">
-              <Link href="/swap">Swap</Link>
+              <Link href="/buy">Buy Crypto</Link>
               <Link href="/login">Sign In</Link>
               <Link href="/signup">Sign Up</Link>
               <Link href="/vendors">Vendors</Link>

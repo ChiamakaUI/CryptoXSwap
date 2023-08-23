@@ -12,21 +12,12 @@ export default function Home() {
         }
         imageSrc={"./banner/first.svg"}
         styles={"flex flex-col md:flex-row lg:flex-row"}
-        cta={"Get Started"}
-        ctaPage={"/signup"}
+        cta={"Buy Coin"}
+        ctaPage={"/buy"}
       />
       <Chart />
-      <Banner
-        heading={"Crypto transactions just got easier"}
-        subTitle={
-          "Start swapping your coins for any other coin and get the same value."
-        }
-        imageSrc={"./banner/third.svg"}
-        styles={"flex flex-col md:flex-row-reverse lg:flex-row-reverse"}
-        cta={"Swap Coins"}
-        ctaPage={"/swap"}
-      />
-      <div className="bg-gradient-to-r from-[#862CBA] via-[#6329B6] to-[#3927B3] w-full text-center p-5 my-5">
+
+      {/* <div className="bg-gradient-to-r from-[#862CBA] via-[#6329B6] to-[#3927B3] w-full text-center p-5 my-5">
         <p className="text-xl lg:text-3xl font-semibold">Want to contact us or give us a review?</p>
         <p className="lg:text-lg my-3.5">Your reviews are very important to us.</p>
         <div>
@@ -34,7 +25,7 @@ export default function Home() {
             <button className="bg-primary p-3 uppercase font-semibold text-white rounded">Contact Us</button>
           </Link>
         </div>
-      </div>
+      </div> */}
       <Banner
         heading={"Join over 100 other users and open a wallet"}
         subTitle={
@@ -48,3 +39,16 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+/* <Banner
+heading={"Crypto transactions just got easier"}
+subTitle={
+  "Start swapping your coins for any other coin and get the same value."
+}
+imageSrc={"./banner/third.svg"}
+styles={"flex flex-col md:flex-row-reverse lg:flex-row-reverse"}
+cta={"Swap Coins"}
+ctaPage={"/swap"}
+/> */

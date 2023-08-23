@@ -6,10 +6,10 @@ import Link from "next/link";
 
 const schema = yup
   .object({
-    name: yup.string().required(),
-    email: yup.string().required(),
-    phone: yup.string().required(),
-    vendor: yup.boolean(),
+    firstName: yup.string().required("First name is required"),
+    lastName: yup.string().required("Last name is required"),
+    email: yup.string().required("Email is required"),
+    phone: yup.string().required("Phone number is required"),
   })
   .required();
 
@@ -35,17 +35,31 @@ const Main = () => {
         <p className="text-center lg:text-lg">
           Please fill form to create an account.
         </p>
-        <div className="my-3.5">
-          <label className="font-semibold">Name</label>
+        <div className="my-3.5 flex flex-row justify-between items-center">
+          <div className="w-[49%]">
+          <label className="font-semibold">First Name</label>
+          <input
+            type="text"
+            className="w-full p-2 rounded focus:outline-none border border-gray-400 mt-2"
+            {...register("firstName")}
+            placeholder="Your first name"
+          />
+          <p className="text-red-600 text-sm">
+            {errors.firstName?.message}
+          </p>
+          </div>
+          <div className="w-[49%]">
+          <label className="font-semibold">Last Name</label>
           <input
             type="text"
             className="w-full p-2 rounded focus:outline-none border border-gray-400 mt-2"
             {...register("name")}
-            placeholder="Your Name"
+            placeholder="Your last name"
           />
-          <p className="text-red-600 text-sm capitalize">
-            {errors.name?.message}
+          <p className="text-red-600 text-sm">
+            {errors.lastName?.message}
           </p>
+          </div>
         </div>
 
         <div className="my-3.5">
@@ -56,7 +70,7 @@ const Main = () => {
             {...register("email")}
             placeholder="Your Email"
           />
-          <p className="text-red-600 text-sm capitalize">
+          <p className="text-red-600 text-sm">
             {errors.email?.message}
           </p>
         </div>
@@ -69,16 +83,9 @@ const Main = () => {
             {...register("phone")}
             placeholder="Your Phone number"
           />
-          <p className="text-red-600 text-sm capitalize">
+          <p className="text-red-600 text-sm">
             {errors.phone?.message}
           </p>
-        </div>
-
-        <div className="my-4">
-          <label className="font-semibold flex flex-row items-center" >
-            <input type="checkbox" name="vendor" {...register("vendor")} className="w-4 h-4 bg-primary rounded"/>
-            <span className="font-semibold ml-1.5 cursor-pointer">Create vendor account</span>
-          </label>
         </div>
 
         <div className="my-3.5 mx-auto w-[99%] flex flex-row justify-between items-center">
